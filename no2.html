@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Última oportunidad 😈</title>
+
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
   </head>
+
   <body>
-    <div class="container">
+    <main class="container">
       <div
         class="tenor-gif-embed"
         data-postid="20616346"
@@ -26,13 +29,25 @@
         async
         src="https://tenor.com/embed.js"
       ></script>
-      <h1>Segura Segurita!!!? Por fis di que siii!!</h1>
-      <h2>Si noo ya veras!!!</h2>
-      <div class="btn">
-        <a href="si.html">SI</a>
-        <a href="#" id="random-btn">NO</a>
-      </div>
-    </div>
-    <script src="script.js"></script>
+
+      <h1>¿Segura segurita? 🥺</h1>
+      <p class="love-text">¡Por fis di que síii!</p>
+      <p class="love-text"><strong>Si no… ya verás 😈</strong></p>
+
+      <nav class="btn">
+        <a href="si.html" class="btn-si" aria-label="Aceptar"  onclick="playMusic()">
+          💖 SÍ
+        </a>
+        <a href="#" id="random-btn" class="btn-no" aria-label="Rechazar">
+          💔 NO
+        </a>
+      </nav>
+    </main>
+    <script src="script.js" defer></script>
+    <script>
+      function playMusic() {
+        localStorage.setItem("playMusic", "true");
+      }
+    </script>
   </body>
 </html>

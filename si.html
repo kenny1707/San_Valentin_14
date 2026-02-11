@@ -1,13 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>¡Dijo que sí! 💖</title>
+
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
   </head>
+
   <body>
-    <div class="container">
+    <main class="container">
+      <div class="container">
       <div
         class="tenor-gif-embed"
         data-postid="10012230355003332465"
@@ -25,8 +29,24 @@
         async
         src="https://tenor.com/embed.js"
       ></script>
-      <h1>Siiiiii, Lo sabia TE AMO AMORCITO</h1>
-      <h1>HASTA EL INFINITO Y UN POQUITO MAS ALLA</h1>
-    </div>
+
+      <h1>¡Siiiiii! 💕</h1>
+      <p class="love-text">
+        Lo sabía… <strong>te amo amorcito</strong> 😍  
+        <br />
+        Hasta el infinito y un poquito más allá 🚀💖
+      </p>
+      <h1>Escuchalo completo amorcito!😍</h1>
+    </main>
+    <audio id="bg-music" src="music.mp3" loop></audio>
+    <script>
+      const audio = document.getElementById("bg-music");
+
+      if (localStorage.getItem("playMusic") === "true") {
+        audio.play().catch(() => {});
+        localStorage.removeItem("playMusic");
+      }
+    </script>
+    <script src="confetti.js"></script>
   </body>
 </html>

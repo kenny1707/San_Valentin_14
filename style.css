@@ -2,44 +2,96 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    position: relative;
-    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffe5e5;
+    background: linear-gradient(135deg, #ffe5e5, #ffd6e0);
 }
 
+/* CONTENEDOR PRINCIPAL */
 .container {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
-    gap: 20px;
-    max-width: 500;
-    margin: 20px;
+    text-align: center;
+    gap: 24px;
+    max-width: 500px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.container .tenor-gif-embed {
-    display: flex;
-    max-width: 200px;
+/* GIF */
+.tenor-gif-embed {
+    max-width: 220px;
 }
 
-.container .btn {
+/* TEXTO */
+h1 {
+    color: #c9184a;
+    font-size: 1.6rem;
+}
+
+/* BOTONES */
+.btn {
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
 .btn a {
     text-decoration: none;
-    color: #111;
-    background: #fff;
-    padding: 10px 25px;
-    border-radius: 8px;
-    box-shadow: 0.5rem 1rem 3rem hsl(0, 0, 0, 0.3);
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
+/* BOTÓN SÍ */
+.btn-si {
+    background-color: #ff4d6d;
+    color: #fff;
+}
+
+.btn-si:hover {
+    background-color: #e63956;
+    transform: scale(1.08);
+}
+
+/* BOTÓN NO */
+.btn-no {
+    background-color: #adb5bd;
+    color: #fff;
+}
+
+.btn-no:hover {
+    background-color: #6c757d;
+    transform: scale(0.95);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.love-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Pruebas

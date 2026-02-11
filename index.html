@@ -1,13 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+
+    <title>Carta de San Valentín ❤️</title>
+    <meta
+      name="description"
+      content="Una carta especial de San Valentín con una pregunta muy importante 💖"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="container">
+    <main class="container">
       <div
         class="tenor-gif-embed"
         data-postid="656304170725267153"
@@ -28,11 +35,27 @@
         async
         src="https://tenor.com/embed.js"
       ></script>
-      <h1>Te gustaria salir conmigo?</h1>
-      <div class="btn">
-        <a href="si.html">SI</a>
-        <a href="no1.html">NO</a>
-      </div>
-    </div>
+
+      <h1>¿Te gustaría ser mi San Valentín? 💘</h1>
+
+      <nav class="btn">
+        <a
+          href="si.html"
+          class="btn-si"
+          aria-label="Aceptar ser mi San Valentín"
+          onclick="playMusic()"
+        >
+          💖 SÍ
+        </a>
+        <a href="no1.html" class="btn-no" aria-label="Rechazar invitación">
+          💔 NO
+        </a>
+      </nav>
+    </main>
+    <script>
+      function playMusic() {
+        localStorage.setItem("playMusic", "true");
+      }
+    </script>
   </body>
 </html>
